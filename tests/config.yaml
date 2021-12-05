@@ -1,0 +1,20 @@
+twig:
+    path:
+        - '%kernel.project_dir%/Resources/views'
+
+framework:
+    form:
+        enabled: true
+    session:
+        enabled: true
+        storage_factory_id: session.storage.factory.mock_file
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    SoureCode\Bundle\Form\Tests\App\:
+        resource: './App/'
+        exclude:
+            - './App/Model/'

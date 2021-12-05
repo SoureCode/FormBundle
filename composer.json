@@ -1,0 +1,42 @@
+{
+    "name": "sourecode/form-bundle",
+    "type": "symfony-bundle",
+    "description": "",
+    "keywords": ["symfony", "form"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Schilling",
+            "email": "jason@sourecode.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.0 || ^8.1",
+        "sourecode/form": "dev-master",
+        "symfony/config": "^5.3 || ^5.4 || ^6.0 || ^6.1",
+        "symfony/dependency-injection": "^5.3 || ^5.4 || ^6.0 || ^6.1",
+        "symfony/http-kernel": "^5.3 || ^5.4 || ^6.0 || ^6.1"
+    },
+    "require-dev": {
+        "symfony/twig-bundle": "^5.3 || ^5.4 || ^6.0 || ^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoureCode\\Bundle\\Form\\": "src"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoureCode\\Bundle\\Form\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
